@@ -1,6 +1,6 @@
 function Login({ onCreateRoom, onJoinRoom }) {
     return (
-        <div className="flex justify-center items-center h-screen">
+        <div className="flex justify-center items-center h-screen selection:bg-indigo-600 selection:text-white">
             <div className="w-3/12 px-6 py-16 border border-gray-200 rounded-lg shadow-lg shadow-indigo-100">
                 <div className="w-full flex flex-col space-y-10 justify-center">
                     <div className="mb-4 text-3xl text-center text-indigo-600">Planning Poker</div>
