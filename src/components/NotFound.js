@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Divider from "./Divider";
+import GoToHome from "./GoToHome";
 import TileLayout from "./TileLayout";
 
 export default function NotFound() {
@@ -10,11 +11,8 @@ export default function NotFound() {
 
                 <Divider />
 
-                <div className="mt-6 font-thin">
-                    <span>Go to{' '}</span>
-                    <Link to="/">
-                        <span className="text-indigo-600">Home &rarr;</span>
-                    </Link>
+                <div className="mt-6">
+                    <GoToHome />
                 </div>
             </div>
         </TileLayout>
