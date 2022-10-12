@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import Divider from "./Divider";
 import TileLayout from "./TileLayout";
-
+ 
 export default function Home() {
     const [roomId, setRoomId] = useState()
     return (
