@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 
 import Home from "./components/Home";
 import NewRoom from "./components/NewRoom";
+import NotFound from "./components/NotFound";
 import Room from "./components/Room";
 
 function App() {
@@ -10,8 +11,13 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/room/:roomId" element={<Room />} />
-        <Route path="/room/new" element={<NewRoom />} />
+
+        <Route path="/room">
+          <Route path=":roomId" element={<Room />} />
+          <Route path="new" element={<NewRoom />} />
+        </Route>
+
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </>
   );
