@@ -1,3 +1,3 @@
 export default function Divider() {
-    return <div className="border border-b-2 border-gray-100"></div>
+    return <div className="my-6 border border-b-2 border-gray-100"></div>
 }
