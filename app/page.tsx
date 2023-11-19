@@ -1,7 +1,7 @@
 import Link from "next/link";
-import Divider from "./_components/divider";
-import CreateRoomForm from "./_components/forms/create-room-form";
-import JoinRoomForm from "./_components/forms/join-room-form";
+import Divider from "@/components/divider";
+import CreateRoomForm from "@/components/forms/create-room-form";
+import JoinRoomForm from "@/components/forms/join-room-form";
 
 export default function Home() {
   return (

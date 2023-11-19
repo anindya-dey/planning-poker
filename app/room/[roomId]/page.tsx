@@ -1,5 +1,5 @@
-import Divider from "@/app/_components/divider";
-import GoToHome from "@/app/_components/go-to-home";
+import Divider from "@/components/divider";
+import GoToHome from "@/components/go-to-home";
 
 export default function RoomPage({ params }: { params: { roomId: string } }) {
     return (
