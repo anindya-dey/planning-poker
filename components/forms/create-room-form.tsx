@@ -1,6 +1,6 @@
 "use client";
 
-import createRoomHandler from "@/app/_handlers/create-room-handler";
+import createRoomHandler from "@/handlers/create-room-handler";
 import Link from "next/link";
 import { useState } from "react";
 
