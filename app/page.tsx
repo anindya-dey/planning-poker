@@ -1,7 +1,13 @@
-import Link from "next/link";
+import type { Metadata } from "next";
+
 import Divider from "@/components/divider";
 import CreateRoomForm from "@/components/forms/create-room-form";
 import JoinRoomForm from "@/components/forms/join-room-form";
+
+export const metadata: Metadata = {
+  title: "Planning Poker",
+  description: "App to help in sprint planning and story point estimation",
+};
 
 export default function Home() {
   return (
@@ -21,4 +27,3 @@ export default function Home() {
     </div>
   );
 }
-

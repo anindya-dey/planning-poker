@@ -1,7 +1,8 @@
 import Divider from "@/components/divider";
 import GoToHome from "@/components/go-to-home";
 
-export default function RoomPage({ params }: { params: { roomId: string } }) {
+export default async function RoomPage({ params }: { params: { roomId: string } }) {
+    const { roomId } = await params;
     return (
         <>
             <div className="text-center">
@@ -11,7 +12,7 @@ export default function RoomPage({ params }: { params: { roomId: string } }) {
                     Join using Room Id{' '}
                 </span>
                 <span className="font-bold">
-                    {`${params.roomId}`}
+                    {`${roomId}`}
                 </span>
             </div>
             <div className="grid grid-cols-2 gap-4 mt-10 lg:grid-cols-3">
