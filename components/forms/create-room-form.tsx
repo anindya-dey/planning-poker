@@ -1,10 +1,10 @@
 "use client";
 
 import createRoomHandler from "@/handlers/create-room-handler";
-import Link from "next/link";
 import { useState } from "react";
 
 export default function CreateRoomForm() {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [roomId, setRoomId] = useState("");
 
   return (

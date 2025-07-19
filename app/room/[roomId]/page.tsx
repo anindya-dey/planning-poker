@@ -1,7 +1,11 @@
 import Divider from "@/components/divider";
 import GoToHome from "@/components/go-to-home";
 
-export default async function RoomPage({ params }: { params: { roomId: string } }) {
+type RoomPageProps = {
+    params: Promise<{ roomId: string }>;
+};
+
+export default async function RoomPage({ params }: RoomPageProps) {
     const { roomId } = await params;
     return (
         <>
